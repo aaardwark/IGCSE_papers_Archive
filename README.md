@@ -1,5 +1,6 @@
 # IGCSE_papers_Archive
-This tool enables students to quickly and easily access papers and mark schemes without a search engine, keep track of what they have completed, and update their teachers. It is well-organized, fast and ad-free. All papers are accessed from papers.gceguide.com.
+This tool enables students to quickly and easily access papers and mark schemes without using a search engine, keep track of what they have completed, and update their teachers. It is well-organized, fast and ad-free. All papers are accessed from papers.gceguide.com.
+**This repo is retired as papers.gceguide.com has moved. All links generated are broken. Additionally, only papers from 2019 to 2022 are available, as the source has not been maintained.**
 
 ## Layout
 The site consists of a home page, as well as pages which can be accessed through links in the top menu. There are subpages for each subject and year, a 'Search' page, a 'Log' page, and an 'About' page, which you are currently viewing. The 'Home' page has a list of all the exam sessions and each subpage has links to individual papers.
