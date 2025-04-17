@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head> 
+<link rel="stylesheet" href="paperarchive.css">
+<title> Report Issue| IGCSE Papers Archive </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="report.js"></script>
+
+<p class="top"> 
+<a href="../Papers_Archive.html">Home</a> |
+<a href="PaperLog.html">Paper Log</a> | 
+<a href="Search_The_Archive.html">Search</a> | 
+<a href="AboutTheArchive.html">About</a> | 
+<a  href="">Report issue </a> </p><br>
+<h2> Report an issue </h2>
+
+</head>
+<body>
+<p> Please make sure you are signed into Gmail, then fill in the following fields and click on the 'Create email' button. It automatically generates a Gmail message, and you only have to hit send. <br>
+We will get back to you if we need more information, and provide a temporary workaround if necessary.
+If there are many issues, the best thing would be to create more than one report.</p>
+
+<p> <label for="cat">Type of issue: </label> <select id="cat"> 
+<option value="" disabled selected>Choose...</option>
+<option value="style">Appearance/design problem</option>
+<option value="ui">User-friendliness</option>
+<option value="href">A page doesn't exist/404 error</option>
+<option value="bug">Something not working properly</option>
+<option value="howto">I don't know how to do something</option>
+<option value="other">Other</option>
+</select> </p>
+
+<p> <label for="pg">Where is it? </label> <select id="pg"> 
+<option value="" disabled selected>Choose...</option>
+<option value="archive">A subject page</option>
+<option value="search">The search page</option>
+<option value="log">The log page</option>
+<option value="main">The homepage</option>
+<option value="about">The about page</option>
+</select> </p>
+
+<p><label for="desc">Briefly describe the issue (max 400 characters): </label> </p>
+<p> <textarea id="desc" placeholder="Description of issue..." maxlength="400" cols="40" rows="12"></textarea></p>
+
+<p> <input type="checkbox" id="consent" checked> 
+When the email is created, some details of your device are included in it. Uncheck the box if you don't  want this.</p>
+
+<button class="btn" onclick="mail()">Create email</button>
+
+</body>
+</html>

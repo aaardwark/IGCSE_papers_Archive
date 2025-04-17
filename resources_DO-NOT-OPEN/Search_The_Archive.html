@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<head>
+<p class="top"> 
+<a href="../Papers_Archive.html">Home</a> |
+<a href="PaperLog.html">Paper Log</a> | 
+<a href="Search_The_Archive.html">Search</a> | 
+<a href="AboutTheArchive.html">About</a> | 
+<a href="report.html">Report issue </a> </p><br>
+
+<h2 class="centre" style="text-align:center;"> Search </h2>
+<title>Search| IGCSE Papers Archive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="paperarchive.css">
+</head>
+
+
+<body>
+<p class="centre"> Select subject:
+<select id="Subject" onchange="disable_paperopts()"> 
+<option value="0653" id="0653" class="Science - Combined" name="246">Combined Science</option> 
+<option value="0680" id="0680" class="Environmental Management" name="12">EM</option>
+<option value="0500" id="0500" class="English - First Language" name="12">English</option> 
+<option value="0580" id="0580" class="Mathematics" name="24">Math</option>
+</select>
+</p>
+
+<p class="centre"> Select year:
+<select id="Year" onchange="track('Year')"> 
+<option value="22"> 2022 </option>
+<option value="21"> 2021 </option> <option value="20"> 2020 </option>
+<option value="19"> 2019 </option> <option value="18"> 2018 </option>
+</select>
+</p>
+
+<p class="centre"> Select season:
+<select id="Season" onchange="disable_setopts();track('Season')">
+<option value="w"> October/November </option> <option value="s"> May/June </option> <option value="m"> Feb/March </option>
+</select>
+</p>
+
+<p class="centre"> Select set:
+<select id="SetNo" onchange="track('SetNo')">
+<option value="1"> Set 1 </option> <option value="2"> Set 2 </option> <option value="3"> Set 3 </option>
+</select>
+</p>
+
+<p class="centre"> Select paper:
+<select id="PaperNo" onchange="track('PaperNo')">
+<option value="1" id="1" hidden> Paper 1 </option>
+<option value="2" id="2" selected> Paper 2 </option>
+<option value="4" id="4"> Paper 4 </option>
+<option value="6" id="6"> Paper 6 </option>
+</select>
+</p>
+
+<p class="centre"> Question paper/Mark scheme
+<select id="FileType" onchange="track('FileType')"> <option value="qp"> Question paper </option> 
+<option value="ms"> Mark scheme </option> <option value="in" id="insert" hidden=""> Insert </option> </select>
+</p>
+
+
+<br>
+<p id="result" class="centre"> 
+<button class="btn" title="search" id="search" onclick="displayUrl();"> <b>GO</b> </button>
+</p>
+
+<script src="searcharchive.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head> 
+
+<p class="top"> 
+<a href="../Papers_Archive.html">Home</a> |
+<a href="PaperLog.html">Paper Log</a> | 
+<a href="Search_The_Archive.html">Search</a> | 
+<a href="AboutTheArchive.html">About</a> | 
+<a  href="report.html">Report issue</a> </p><br>
+
+<h2>Your Paper Log on <a id="dateofview"></a></h2> 
+<title>Paper Log| IGCSE Papers Archive</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="paperarchive.css">
+</head>
+
+
+<body>
+
+<p style="font-size: 18px;"> <b>View log for 
+<span><select id="sub" onchange="LOG()"> 
+<option value="">All</option> <option value="0653">Combined Science</option> 
+<option value="0500">English</option> <option value="0680">EM</option> 
+<option value="0580">Math</option> </select></span> 
+papers. </b></p>
+
+<p id="log_display"></p>
+<p> <button id="btn" class="btn">Save log of <span id="subject"></span> papers</button> </p>
+
+<script> 
+const d = new Date(), dd = d.getDate(), mm = d.getMonth() + 1, yyyy = d.getFullYear();
+var date = dd + '-' + mm + '-' + yyyy;
+
+window.onload = LOG();
+function LOG() {
+      document.getElementById('dateofview').innerHTML = date;
+      var log = localStorage.PaperLog || '';
+      const loglist = log.split(','); log = '';
+      for (let item = 0; item < loglist.length; item++) {
+            if (loglist[item].indexOf(sub.value) > -1) {
+                  log += loglist[item] + '<br><br>';
+            }
+      }
+      document.getElementById('log_display').innerHTML = log.replace("undefined", '');
+      for (i = 0; i < 5; i++) {
+            var opt_i = document.getElementsByTagName('option')[i]; 
+            if (opt_i.getAttribute('value') == sub.value) {
+                  var subname = opt_i.innerHTML; 
+            }
+      }
+      document.getElementById('subject').innerHTML = subname;
+      return subname;
+}
+
+</script>
+
+
+<script>
+            function download(filename, textInput) {
+                  var link = document.createElement('a');
+                  link.href = 'data:charset=utf-8,' + encodeURIComponent(textInput);
+                  link.download = filename;
+                  document.body.appendChild(link);
+                  link.click();
+            }
+
+            function on_downloadBtn_click() {
+                  var log2 = localStorage.PaperLog || ''; 
+                  const loglist2 = log2.split(','); 
+                  log2 = 'My log of ' + LOG() + ' papers: ';
+                  for (item = 0; item < loglist2.length; item++) {
+                        if (loglist2[item].indexOf(sub.value) !== -1) {
+                              log2 += loglist2[item] + ', ';
+                        }
+                  }
+                  var list = log2.replace('defined, ','');
+                  var filename = 'My' + LOG() + 'PaperLog on ' + date + '.txt';
+                  download(filename, list);
+            }
+
+            document.getElementById("btn").addEventListener("click", on_downloadBtn_click);
+      </script>
+
+</body>
+</html>

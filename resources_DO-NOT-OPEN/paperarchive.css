@@ -1,0 +1,21 @@
+ul {font-size: 20;}
+li {font-size: 20px;}
+
+.top {position: fixed; right: 10px; top: -10px; background-color: #ffffdf; padding: 5px; text-align: left; font-family: arial;}
+.bottom {position: fixed; right: 10px; bottom: -10px; background-color: #ffffdf; padding: 5px; text-align: left; font-family: arial; font-size: 12px;}
+
+.btn {color: blue; background-color: #A4D3F4; padding: 10px; font-size: 20; font-family: verdana; text-align: center;}
+.btn2 {color: black; background-color: #CFEFEE; padding: 3px; font-size: 12; font-family: verdana; text-align: center;}
+.btn2:active {background-color: #bededd; color: red;}
+
+p.centre {text-align: center; font-size: 17px; font-family: arial;}
+/*#redo {color: red; font-size: 20px;}*/
+.main {background-color: #00bbff; width: 160px;}
+
+button.expand {font-size: 25px; color: #ffffff; background-color: #ff00bb; width: 32px; border-radius: 50%; text-align: center; text-decoration: none; border: 1px solid #000000;}
+button.expand:hover {background-color: #ff00ff;}
+button.expand:active {background-color: #000000; transform: translateY(3px);}
+
+.notice {font-size: 16px; background-color: #ff6666; padding: 30px; width:200px; height:150px; border-radius: 30px; top: 20px; left: 20px; position: fixed; box-shadow: 5px 5px 2px gray;}
+
+/* #ff00bb pink, #00ff00 green #00bb00, #ff6600 orange, orange2 #ffa366, */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head> 
+<link rel="stylesheet" href="resources_DO-NOT-OPEN/paperarchive.css">
+<script>
+function nosePoke() 
+{return alert("Don't poke your nose where there's no use poking it. ;-) ");}
+
+window.onload = function() {
+if (localStorage.getItem('tracker') == undefined) {localStorage.tracker = 'start'; redir();} 
+if (localStorage.getItem('PaperLog') == undefined) {localStorage.setItem('PaperLog',',');} }
+
+function redir() {localStorage.new = '1'; let link = document.getElementsByTagName('a')[3]; link.click();}
+</script>
+
+<title> Home| IGCSE Papers Archive </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<p class="top"> 
+<a href="">Home</a> |
+<a href="resources_DO-NOT-OPEN/PaperLog.html">Paper Log</a> | 
+<a href="resources_DO-NOT-OPEN/Search_The_Archive.html">Search</a> | 
+<a href="resources_DO-NOT-OPEN/AboutTheArchive.html">About</a> | 
+<a  href="resources_DO-NOT-OPEN/report.html">Report issue </a> </p><br>
+<h2> IGCSE Past Papers Archive </h2>
+
+<p> <em> This archive contains all Combined Science, EM, English, and Math past papers and mark schemes from 2019 to 2021. It may be updated once the <a href="" onclick="return nosePoke();">2022</a> papers are published. <br>
+To understand what it does, please see the 'About' page if you haven't yet.</em></p>
+
+</head>
+<br>
+
+
+<body>
+
+<div id="list">
+<ul> 
+<li>Combined Science</li> 
+<ul> 
+<li> <a href="archive_DO-NOT-OPEN/CS_2022.html">2022 CS Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/CS_2021.html">2021 CS Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/CS_2020.html">2020 CS Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/CS_2019.html">2019 CS Papers</a></li>
+</ul>
+
+<li>EM</li> 
+<ul> 
+<li> <a href="archive_DO-NOT-OPEN/EM_2022.html">2022 EM Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/EM_2021.html">2021 EM Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/EM_2020.html">2020 EM Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/EM_2019.html">2019 EM Papers</a></li>
+</ul>
+
+<li>English</li> 
+<ul> 
+<li> <a href="archive_DO-NOT-OPEN/Eng_2022.html">2022 Eng Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/Eng_2021.html">2021 Eng Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/Eng_2020.html">2020 Eng Papers</a></li>
+<li> n/a --   
+<!-- Second notice <br> <span style="font-size: 15px;"> The syllabus and paper structure has changed <br> since 2019, so those papers aren't relevant. </span> --> </li>
+
+<!--  First notice <li> <span class="notice"> n/a-- 
+<button class="btn2" style="font-size: 14px !important;" onclick="alert('Syllabus and paper structure has changed since 2019, so the papers will not be as useful.')">
+Why?</button> </span> </li> -->
+
+</ul>
+
+<li>Math </li>
+<ul> 
+<li> <a href="archive_DO-NOT-OPEN/Math_2022.html">2022 Math Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/Math_2021.html">2021 Math Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/Math_2020.html">2020 Math Papers</a></li>
+<li> <a href="archive_DO-NOT-OPEN/Math_2019.html">2019 Math Papers</a></li>
+</ul>
+
+</ul>
+</div>
+
+</body>
+</html>
